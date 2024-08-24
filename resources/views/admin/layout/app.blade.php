@@ -11,6 +11,9 @@
 
     <title>TPQ Baiti Jannati</title>
 
+    <link href="{{ asset('assets/img/Logo.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/Logo.png') }}" rel="apple-touch-icon">
+
     <!-- Custom fonts for this template -->
     <link href="{{asset('template/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link

@@ -178,7 +178,7 @@ class HomeController extends Controller
             'tlpn_ortu' => $request->input('tlpn_ortu'),
         ]);
 
-        return redirect()->route('kegiatan-tpq.show', ['id' => $id])->with('success', 'Pendaftaran berhasil!');
+        return redirect()->route('kegiatan-tpq.show', ['id' => $id])->with('success', 'Pendaftaran berhasil! Silahkan datang sesuai informasi yang tertera.');
     }
 
 }

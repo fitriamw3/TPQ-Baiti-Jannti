@@ -157,7 +157,7 @@
             style="margin-bottom: 20px;">
             @endif
               <div class="btn-wrap">
-                <a href="{{ route('kegiatan-santri.show', $item->id) }}" class="btn-buy">Info</a>
+                <a href="{{ route('kegiatan-tpq.show', $item->id) }}" class="btn-buy">Info</a>
               </div>
           </div>
         </div>

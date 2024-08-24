@@ -29,10 +29,11 @@
         <div class="col-lg-10" data-aos="fade-up" style="margin-top: 35px;">
           <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3">
             <p>
-              {{ $profil->keterangan ?? 'Deskripsi profil belum tersedia.' }}
+              {!! nl2br(e($profil->keterangan ?? 'Deskripsi profil belum tersedia.')) !!}
             </p>
           </div>
         </div>
+
 
         <div class="col-lg-10" data-aos="fade-up" style="margin-top: 35px;">
           <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3">

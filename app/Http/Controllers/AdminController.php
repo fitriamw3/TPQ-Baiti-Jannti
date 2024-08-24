@@ -79,19 +79,17 @@ class AdminController extends Controller
     public function showRegistrations($id)
     {
         $kegiatan = Kegiatan::findOrFail($id);
-        $registrations = $kegiatan->registrations; 
+        $registrations = $kegiatan->registrations;
 
         return view('admin.regis_kegiatan', compact('kegiatan', 'registrations'));
     }
 
     public function destroyRegistration($id)
-{
-    $registration = KegiatanRegis::findOrFail($id);
-    $registration->delete();
+    {
+        $registration = KegiatanRegis::findOrFail($id);
+        $registration->delete();
 
-    return redirect()->back()->with('success', 'Pendaftaran berhasil dihapus.');
-}
-
-
+        return redirect()->route('kegiatan-tpq.registrations')->with('success', 'Registrasi berhasil dihapus');
+    }
 
 }
